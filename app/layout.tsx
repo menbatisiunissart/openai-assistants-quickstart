@@ -5,8 +5,8 @@ import { assistantId } from "./assistant-config";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Assistants API Quickstart",
-  description: "A quickstart template using the Assistants API with OpenAI",
+  title: "Blyng Click2Trace Alpha Demo",
+  description: "Blyng Click2Trace Alpha Demo apps",
   icons: {
     // icon: "/openai.svg",
     icon: "/blyng.svg",
