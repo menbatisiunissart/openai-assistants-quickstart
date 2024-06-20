@@ -1,7 +1,6 @@
 export let assistantId = ""; // set your assistant ID here
 export let title = "";
 export let description = "";
-export let icon = "";
 export let basicChatTitle = "";
 
 if (assistantId === "") {
@@ -14,10 +13,6 @@ if (title === "") {
 
 if (description === "") {
   description = process.env.DESCRIPTION;
-}
-
-if (icon === "") {
-  icon = process.env.ICON;
 }
 
 if (basicChatTitle === "") {

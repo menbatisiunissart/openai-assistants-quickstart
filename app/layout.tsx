@@ -1,15 +1,12 @@
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Warnings from "./components/warnings";
-import { assistantId, title, description, icon } from "./assistant-config";
+import { assistantId, title, description } from "./assistant-config";
 const inter = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title,
   description,
-  icons: {
-    icon,
-  },
 };
 
 export default function RootLayout({ children }) {
