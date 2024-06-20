@@ -2,15 +2,18 @@
 
 import React from "react";
 import styles from "./page.module.css";
-import { assistantId, title, description } from "./assistant-config";
+import { basicChatTitle, description } from "./assistant-config";
 
 const Home = async () => {
-  const categories = {
-    "Click2Trace chat": "basic-chat",
+  let categories = {};
+  categories[basicChatTitle]="basic-chat";
+  const otherCategories = {
     "Function calling": "function-calling",
     "File search": "file-search",
     All: "all",
   };
+  categories = {...categories,...otherCategories}
+
 
   return (
     <main className={styles.main}>
