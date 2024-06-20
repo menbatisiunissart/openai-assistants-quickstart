@@ -2,8 +2,9 @@
 
 import React from "react";
 import styles from "./page.module.css";
+import { assistantId, title, description } from "./assistant-config";
 
-const Home = () => {
+const Home = async () => {
   const categories = {
     "Click2Trace chat": "basic-chat",
     "Function calling": "function-calling",
@@ -14,7 +15,7 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <div className={styles.title}>
-        Blyng Click2Trace Alpha Demo Apps
+        {description}
       </div>
       <div className={styles.container}>
         {Object.entries(categories).map(([name, url]) => (
