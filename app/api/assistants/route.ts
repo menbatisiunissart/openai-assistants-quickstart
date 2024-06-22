@@ -57,7 +57,7 @@ Start the interaction with the following text and then proceed with the first qu
 export async function POST() {
   const assistant = await openai.beta.assistants.create({
     instructions: instructions,
-    name: "Quickstart Assistant",
+    name: "Blyng Click2Trace",
     model: "gpt-4o",
     tools: [
       { type: "code_interpreter" },
