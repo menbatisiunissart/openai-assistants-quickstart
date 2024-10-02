@@ -95,3 +95,36 @@
   color: #b8b8b8;
   margin-right: 8px;
 }
+
+.assistantMessage table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+.assistantMessage th,
+.assistantMessage td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.assistantMessage th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.assistantMessage tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.assistantMessage tr:hover {
+  background-color: #f1f1f1;
+}
+
+.assistantMessage table,
+.assistantMessage td,
+.assistantMessage th {
+  border-radius: 5px;
+  overflow: hidden;
+}

@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./chat.module.css";
 import { AssistantStream } from "openai/lib/AssistantStream";
 import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm"; // Import remark-gfm
 // @ts-expect-error - no types for this yet
 import { AssistantStreamEvent } from "openai/resources/beta/assistants/assistants";
 import { RequiredActionFunctionToolCall } from "openai/resources/beta/threads/runs/runs";
@@ -20,7 +21,7 @@ const UserMessage = ({ text }: { text: string }) => {
 const AssistantMessage = ({ text }: { text: string }) => {
   return (
     <div className={styles.assistantMessage}>
-      <Markdown>{text}</Markdown>
+      <Markdown remarkPlugins={[remarkGfm]}>{text}</Markdown>
     </div>
   );
 };
